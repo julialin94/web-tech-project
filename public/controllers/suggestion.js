@@ -18,14 +18,15 @@ angular
       if (status === google.maps.places.PlacesServiceStatus.OK) {
         var marker = new google.maps.Marker({
           map: map,
-          position: place.geometry.location
+          position: place.geometry.location,
+          animation: google.maps.Animation.DROP
         });
         map.setCenter(place.geometry.location);
 
         google.maps.event.addListener(marker, 'click', function() {
           infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
             place.formatted_address + '</div>');
-          infowindow.open(map, this);
+          infowindow.open(map, marker);
         });
       }
     });
