@@ -16,19 +16,6 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'public/*'
-      // 'libs/angular.js',
-      // 'libs/angular-mocks.js'
-      //'src/index.html',
-
-      // for testing orders.getTotalSpent()
-      // 'src/main.js',
-      // 'src/orders.js',
-      // 'tests/orders.spec.js'
-
-      // for testing ReviewsReport
-      // 'src/data.js',
-      // 'src/ReviewsReport.js',
-      // 'tests/ReviewsReport.spec.js'
     ],
 
 
